@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import {FaBars, FaTimes} from "react-icons/fa";
 import "../Styles/main.css";
-import webAppLogo from "../Assets/icons/LogoAJ.png";
+import webAppLogo from "../Assets/icons/logo-nobg.png";
 
 function Navbar() {
     const navRef = useRef();
@@ -12,7 +12,10 @@ function Navbar() {
 
     return (
         <header>
-            <img class="img-logo" alt="logo" src={webAppLogo}></img>
+            <div className="logo-container">
+                <img className="img-logo" alt="logo" src={webAppLogo}/>
+                <span className="logo-text">AJRUSofware</span>
+            </div>
             <nav ref={navRef}>
                 <a href={"/#"}>About</a>
                 <a href={"/#"}>Contact</a>

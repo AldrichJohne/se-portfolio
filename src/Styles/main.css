@@ -85,6 +85,16 @@ header .nav-btn{
 }
 
 .img-logo{
-    height: 20px;
+    height: 30px;
     width: 30px;
 }
+
+.logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+.logo-text {
+    margin-left: 10px; /* Adjust the spacing between logo and text as needed */
+}
+  
